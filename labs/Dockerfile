@@ -1,3 +1,5 @@
 FROM fedora
 RUN yum install -y figlet
-CMD exec figlet -f slant "Hello World"
+ENTRYPOINT [ "figlet" ]
+# CMD ["Hello Docker"]
+CMD ["Hello TU856 yo gonna fail"]
