@@ -1,3 +1,3 @@
 FROM fedora
 RUN yum install -y figlet
-ENTRYPOINT [ "figlet" ]
+CMD exec figlet -f slant "Hello World"
